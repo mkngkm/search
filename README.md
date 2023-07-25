@@ -1,9 +1,9 @@
-### 2023 Spring COSE361 ARTIFICIAL INTELLIGENCE(ENGLISH)
+## 2023 Spring COSE361 ARTIFICIAL INTELLIGENCE(ENGLISH)
 
 
-### From : UCB CS 188 | Spring 2020 https://inst.eecs.berkeley.edu/~cs188/sp20/project1/
+### From : UCB CS 188 | Spring 2020 https://inst.eecs.berkeley.edu/~cs188/sp20/project2/
 
-### Introoduction
+## Introoduction
 
 In this project, you will design agents for the classic version of Pacman, including ghosts. Along the way, you will implement both minimax and expectimax search and try your hand at evaluation function design.
 
@@ -14,12 +14,12 @@ This can be run on all questions with the command:python autograder.py
 
 ### Welcome to Multi-Agent Pacman
 
-### Question 1 (4 points): Reflex Agent
+## Question 1 (4 points): Reflex Agent
 Improve the ReflexAgent in multiAgents.pyto play respectably. The provided reflex agent code provides some helpful examples of methods that query the GameState for information. A capable reflex agent will have to consider both food locations and ghost locations to perform well. Your agent should easily and reliably clear the testClassic layout:
 
 
 
-### Question 2 (5 points): Minimax
+## Question 2 (5 points): Minimax
 Now you will write an adversarial search agent in the provided MinimaxAgent class stub in multiAgents.py. Your minimax agent should work with any number of ghosts, so you’ll have to write an algorithm that is slightly more general than what you’ve previously seen in lecture. In particular, your minimax tree will have multiple min layers (one for each ghost) for every max layer.
 
 Your code should also expand the game tree to an arbitrary depth. Score the leaves of your minimax tree with the supplied self.evaluationFunction, which defaults to scoreEvaluationFunction. MinimaxAgent extends MultiAgentSearchAgent, which gives access to self.depth and self.evaluationFunction. Make sure your minimax code makes reference to these two variables where appropriate as these variables are populated in response to command line options.
@@ -36,7 +36,7 @@ The minimax values of the initial state in the minimaxClassic layout are 9, 8, 7
 
 
 
-### Question 3 (5 points): Alpha-Beta Pruning
+## Question 3 (5 points): Alpha-Beta Pruning
 Make a new agent that uses alpha-beta pruning to more efficiently explore the minimax tree, in AlphaBetaAgent. Again, your algorithm will be slightly more general than the pseudocode from lecture, so part of the challenge is to extend the alpha-beta pruning logic appropriately to multiple minimizer agents.
 
 You should see a speed-up (perhaps depth 3 alpha-beta will run as fast as depth 2 minimax). Ideally, depth 3 on smallClassic should run in just a few seconds per move or faster.
